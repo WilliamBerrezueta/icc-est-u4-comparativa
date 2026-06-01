@@ -13,7 +13,7 @@ public class Resultado {
         this.escenario = escenario;
         this.sample = sample;
         this.tiempoNano = tiempoNano;
-        this.tiempoMilis = tiempoNano / 100000.0;
+        this.tiempoMilis = tiempoNano / 1000000.0;
     }
 
     public String getAlgoritmo() {
