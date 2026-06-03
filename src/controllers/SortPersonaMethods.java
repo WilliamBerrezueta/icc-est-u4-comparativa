@@ -24,6 +24,10 @@ public class SortPersonaMethods {
         }
     }
     private int particionar(Persona[] personas, int inicio, int fin){
+        /// lineas agregadas para que no se desborde a la hora de imprimir ///
+        int medio = (inicio + fin) / 2;
+        intercambiar(personas, medio, fin);
+        ////////////////////////////////////////////
         Persona pivote = personas[fin];
         int i = inicio - 1;
 
